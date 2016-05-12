@@ -1,2 +1,24 @@
-Coloque aqui suas instruÁıes ou coment·rios que ache ˙til/relevantes para possamos ler 
-quando estivermos avaliando a sua soluÁ„o
+Como executar
+
+Classe Main: pre-dojo\src\br\com\amil\jtpp\principal\Inicializador
+
+==== // ==== // ==== // ==== // ==== // ==== // ==== //
+
+Sobre a minha implenta√ß√£o
+
+Modelo
+- Procurei deixar as classes objetivas e coesas, cada uma com a sua pr√≥pria responsabilidade 
+
+(DSL)
+ - Utilizado Groovy como linguagem por:
+	- Proporcionar mais agilidade no desenvolvimento nesse tipo de requisito comparado ao Java
+	- Interoperabilidade perfeita com as bibliotecas Java
+	- Possui todos os recursos necess√°rios para cumprir o requesito
+	
+TDD
+ - Criado testes de unidade previamente ao desenvolvimento e teste de conceito
+
+Interface
+ - Servi√ßos feitos por meio de interfaces, favorecendo o uso de orienta√ß√£o a objetos e polimorfismo
+com futuras novas formas de implementa√ß√£o
+	

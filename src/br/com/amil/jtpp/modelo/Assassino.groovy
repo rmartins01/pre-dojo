@@ -11,23 +11,27 @@ import br.com.amil.jtpp.util.Factory;
  */
 abstract class Assassino {
 	
-	String nome
-	Integer quantidadeMortes = 0
-	Map armas = [:]
-	Integer award =0
-	String dataHoraAssassinato
+	def nome
+	def quantidadeMortes = 0
+	def armas = [:]
+	def award =0
+	def dataHoraAssassinato
 	
 	Morte usando(nome){
 		
-		if(this.armas.empty){
-			this.armas.put(nome, 1)
+		if(armas){
+			armas[nome] = armas[nome] + 1
 		}else{
-		
-			if(this.armas.get(nome) != null)
-				this.armas.put(nome, this.armas.get(nome) + 1) 
+			armas[nome] = 1
 		}
 
 		new Factory().newInstance(Morte)
+	}
+
+	String toString() {
+		"Assassino [nome=" + nome + ", quantidadeMortes=" + 
+		quantidadeMortes + ", armas=" + armas + ", award=" + 
+		award + ", dataHoraAssassinato=" + dataHoraAssassinato + "]"
 	}
 	
 }

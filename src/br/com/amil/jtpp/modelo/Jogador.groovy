@@ -9,8 +9,8 @@ package br.com.amil.jtpp.modelo
  */
 class Jogador extends Assassino{
 
-	Integer morto = 0
-	Assassino quemMeMatou
+	def  morto = 0
+	def  quemMeMatou
 	
 	def morra(){
 		this.morto+=1;

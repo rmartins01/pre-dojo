@@ -11,8 +11,15 @@ class Partida {
 	
 	static def PARTIDA_EM_ANDAMENTO = Boolean.FALSE
 	
-	String idSessao
-	String dataHoraInicioPartida
-	String fimPartida
-	Map assassinos
+	def idSessao
+	def dataHoraInicioPartida
+	def fimPartida
+	def assassinos = [:]
+	String toString() {
+		"Partida [idSessao=" + idSessao + ", dataHoraInicioPartida=" + 
+		dataHoraInicioPartida + ", fimPartida=" + fimPartida + ", assassinos=" + 
+		assassinos + "]";
+	}
+	
+	
 }
