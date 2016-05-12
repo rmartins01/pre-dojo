@@ -39,7 +39,7 @@ class LeitorLogImpl extends LeitorLog{
 				if(partida != null){
 					
 					//Com uma partida em andamento, adiciona jogadores e suas operações
-					partida.getAssassinos().put(carregaLinhaOperacao(linha.split(DELIMITADOR_ARQUIVO_LOG_JTPP)))
+					partida.assassinos[carregaLinhaOperacao(linha.split(DELIMITADOR_ARQUIVO_LOG_JTPP))]
 				}
 				
 			}else if(linha.contains(MATCH) && linha.contains(HAS_ENDED) && PARTIDA_EM_ANDAMENTO){ //Finaliza o carregamento do Log
@@ -47,7 +47,7 @@ class LeitorLogImpl extends LeitorLog{
 				Partida partidaFinal = criaPartida(linha.split(DELIMITADOR_ARQUIVO_LOG_JTPP))
 				
 				//Verifica se está encerrando a partida em andamento, caso contrário continua
-				if(partidaFinal.getIdSessao().equals(partida.getIdSessao()){
+				if(partidaFinal.idSessao == partida.idSessao){
 					
 					//Fim da partida, retorna o carregamento
 					return partida
@@ -68,8 +68,7 @@ class LeitorLogImpl extends LeitorLog{
 		assassino.setDataHoraAssassinato(dataHoraAssassinato)
 		
 		Jogador jogador = factory.newInstance(Jogador)
-		jogador.setNome(linhaPartida[POSICAO_MORTO])
-		jogador.setQuemMeMatou(assassino)
+		jogador.nome = linhaPartida[POSICAO_MORTO]
 		jogador.setDataHoraAssassinato(dataHoraAssassinato)
 		
 		assassino.usando(linhaPartida[POSICAO_ARMA]).mate(jogador);

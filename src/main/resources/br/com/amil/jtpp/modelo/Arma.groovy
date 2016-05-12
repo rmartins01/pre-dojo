@@ -8,9 +8,10 @@ package br.com.amil.jtpp.modelo
 class Arma {
 
 	def nome
-	def quantidadeUsada
+//	def quantidadeUsada
 	String toString() {
-		"Arma [nome=" + nome + ", quantidadeUsada=" + quantidadeUsada + "]";
+//		"Arma [nome=" + nome + ", quantidadeUsada=" + quantidadeUsada + "]";
+		"Arma [nome=" + nome + "]";
 	}
 	
 }

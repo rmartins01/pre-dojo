@@ -10,7 +10,6 @@ package br.com.amil.jtpp.modelo
 class Morte {
 
 	def mate(Jogador jogador){
-		jogador.setQuantidadeMortes(jogador.getQuantidadeMortes()+1)
 		jogador.morra()
 	}
 }
