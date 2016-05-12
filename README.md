@@ -1,3 +1,12 @@
+#Teste Candidato Robson Martins
+```
+Desenvolvedor Java Sênior
+Linkedin: https://br.linkedin.com/in/robson-martins-6231a152
+
+Início : 11/05/2016
+Término: 12/05/2016
+```
+
 PROBLEMA
 ========
 Dado o seguinte log de um jogo de tiro em primeira pessoa:
