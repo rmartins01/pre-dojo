@@ -6,8 +6,14 @@
 Objetivo: Desenvolvedor Java Sênior
 
 Início : 11/05/2016
-Término: 12/05/2016
+Término: 13/05/2016
 ```
+
+##Resumo
+![Beanstalk02](imagens/resumo_teste.GIF)
+
+##Travis Ci
+![Beanstalk02](imagens/travis.GIF)
 
 
 PROBLEMA

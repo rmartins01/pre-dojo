@@ -1,24 +1,38 @@
 Como executar
 
-Classe Main: pre-dojo\src\br\com\amil\jtpp\principal\Inicializador
+Classe Main: pre-dojo\src\br\com\amil\jtpp\principal\Inicializador 
+ - lê o arquivo jttp.log e apresenta o resumo da partida 
+
+Ou 
+
+Classe JUnitTests: pre-dojo\src\test\resources\br\com\amil\jtpp\servico\PartidaTest.groovy
+ - Executa os cenários de teste previamente definidos e apresenta o resumo da partida
 
 ==== // ==== // ==== // ==== // ==== // ==== // ==== //
 
-Sobre a minha implentação
+Sobre a minha implementação
 
 Modelo
-- Procurei deixar as classes objetivas e coesas, cada uma com a sua própria responsabilidade 
+ - Procurei deixar as classes objetivas, coesas e com baixo acoplamento. 
+ - Cada uma com a sua própria função e com poucas responsabilidades 
 
 (DSL)
  - Utilizado Groovy como linguagem por:
 	- Proporcionar mais agilidade no desenvolvimento nesse tipo de requisito comparado ao Java
 	- Interoperabilidade perfeita com as bibliotecas Java
-	- Possui todos os recursos necessários para cumprir o requesito
+	- Possui todos os recursos necessários para cumprir o requisito
 	
 TDD
  - Criado testes de unidade previamente ao desenvolvimento e teste de conceito
 
+Jacoco
+	- Cobertura de testes
+
+Travis CI 
+	- Alternativa ao Jenkins para integração continua, execução dos testes unitários e etc
+	- Fácil integração com Git 
+
 Interface
- - Serviços feitos por meio de interfaces, favorecendo o uso de orientação a objetos e polimorfismo
+ - Serviços feitos por meio de interfaces, favorecendo o uso de orientação a objetos e o polimorfismo
 com futuras novas formas de implementação
 	
